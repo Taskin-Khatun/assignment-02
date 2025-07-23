@@ -1,0 +1,12 @@
+.nav-items{
+    list-style-type: none;
+}
+
+.nav-items a{
+    text-decoration: none;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
