@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Flower layout</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/flower.css">
     <script src="https://kit.fontawesome.com/ac41b47525.js" crossorigin="anonymous"></script>
 </head>
@@ -16,10 +19,10 @@
             </div>
             <div>
                 <ul class="nav-items flex justify-around gap-4">
-                    <li><a class="hidden md:block" href="">Home</a></li>
-                    <li><a class="hidden md:block"  href="">Shop</a></li>
-                    <li><a class="hidden md:block" href="">About Us</a></li>
-                    <li><a href=""><i class="fa-solid fa-cart-shopping"></i> Cart ($56)</a></li>
+                    <li><a class="hidden md:block home" href="">Home</a></li>
+                    <li><a class="hidden md:block others-nav"  href="">Shop</a></li>
+                    <li><a class="hidden md:block others-nav" href="">About Us</a></li>
+                    <li><a class="others-nav" href=""><i class="fa-solid fa-cart-shopping"></i> Cart ($56)</a></li>
                 </ul>
 
             </div>
@@ -27,6 +30,16 @@
 
     </header>
     <main>
+        <section class="hero-section flex justify-between items-center md:mx-[100px] mt-[30px]  sm: mx-[10px] mt-[5px] ">
+            <div class="hero-content">
+                <h2 class="noto-serif-normal font-bold text-[3rem]">ALWAYS <span class="text-clr">FRESH </span><br><span class="text-clr">FLOWERS</span></h2>
+                <p class="description inter-normal">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of <br> fresh flowers that are perfect for any occasion. </p>
+            </div>
+            <div class="hero-image">
+                <img src="./assets/hero-flower.png" alt="">
+
+            </div>
+        </section>
 
     </main>
     <footer>
