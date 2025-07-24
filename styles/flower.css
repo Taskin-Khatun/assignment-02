@@ -51,7 +51,7 @@
 .text-clr{
     color: #E95A08;
 }
-.description{
+.description, .plant-description{
     color: rgba(0, 0, 0, 0.5);
     font-size: 1rem;
     font-weight: 400px;
@@ -60,7 +60,52 @@
     align-items: flex-start;
 }
 .hero-content img{
-    width: 100%;
+    max-width: 1140px;
+}
+
+
+/* plant section styles */
+.plant-header{
+    font-size:2.1rem ;
+    font-weight: bold;
+}
+.plant-content{
+    text-align: center;
+    
+    padding: 30px 50px;
+}
+.plant-section{
+    margin-top: 100px;
+}
+.flr-name{
+    color: #111111;
+    font-size:1rem ;
+    font-weight: 500px;
+}
+.flr-price{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.card-btn{
+    font-size: 0.6rem;
+    font-weight: 600px;
+    background-color: #E95A08;
+    color: #FFFFFF;
+    max-width: 270px;
+    text-align: center;
+    height: 30px;
+    
+}
+.card{
+    max-width: 270px;
+    height: auto;
+}
+
+.plant-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 20px;
+    column-gap: 10px;
 }
 
 
@@ -82,13 +127,17 @@
     }
     .hero-img{
         margin-bottom: 28px;
-        width: 100%;
+        max-width: 1140px;
     }
     .hero-content{
         order: 2;
     }
     .hero-img{
         order: 1;
+    }
+    .plant-grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
     }
     
 }
