@@ -190,6 +190,49 @@
 
 }
 
+.flex-container{
+    display: flex;
+    gap: 20px;
+    max-width: 1140px;
+    margin: auto;
+    height: 340px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+
+.flex-item-1{
+    background-image: url('../assets/deal-bloom.png');
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+}
+
+.flex-item-2{
+    background-image: url('../assets/deal-ana.png');
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+
+}
+
+.flex-item-large{
+    background-image: url('../assets/deal-large.png');
+    flex: 2;
+    height: 100%;
+
+}
+
 .up-img-container{
     width: 34%;
     height: 100%;
@@ -197,26 +240,7 @@
     
 }
 
-/* .low-img-container{
-    background-image: url('../assets/deal-ana.png');
 
-}
-
-.right-img-container{
-    background-image: url('../assets/deal-large.png');
-    
-     max-width: 66%;
-    
-    height: auto;
-}
-
-
-
-.left-img_container{
-    max-width: 34%;
-    height: auto;
-}
- */
 
 
     
@@ -287,6 +311,35 @@
     padding: 8px 10px;
 }
 
+/* footer styles */
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+.account{
+    display: flex;
+    justify-content: space-around;
+    height: 1.5rem;
+    width: 1.5rem;
+    gap: 15px;
+    margin-right: 20px;
+}
+.feature, .home {
+    display: block;
+    margin-bottom: 30px;
+}
+.logo{
+    align-items: start;
+    max-width: 300px;
+}
+.footer-link{
+    font-weight: 400;
+    font-size: 0.7rem;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 100px;
+}
+
 
 
 
@@ -340,6 +393,18 @@
         padding: 0;
         max-width: 320px;
         height: 50px;
+    }
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        
+    }
+    .footer-link, .feature, .home{
+        margin-bottom: 5px;
+    }
+    .home{
+        display: hidden;
     }
     
 
