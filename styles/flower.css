@@ -190,66 +190,95 @@
 
 }
 
-.flex-container{
+.container{
+    margin-top: 50px;
+}
+
+.flex-container {
     display: flex;
     gap: 20px;
-    max-width: 1140px;
-    margin: auto;
+    max-width: 1000px;
+    margin: 0 auto;
     height: 340px;
 }
-.column{
+
+.column {
     display: flex;
     flex-direction: column;
     gap: 20px;
     flex: 1;
 }
 
-
-.flex-item-1{
-    background-image: url('../assets/deal-bloom.png');
+.flex-item {
     flex: 1;
     background-size: cover;
     background-position: center;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-
+    position: relative;
 }
 
-.flex-item-2{
-    background-image: url('../assets/deal-ana.png');
-    flex: 1;
-    background-size: cover;
-    background-position: center;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-
-
+.mid-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.flex-item-large{
-    background-image: url('../assets/deal-large.png');
-    flex: 2;
-    height: 100%;
-
+.mid-content > div{
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-
-
-
-
-    
-    
-
-
+.mid-content > div > h4{
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: white;
+}
+.mid-content{
+     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     
 
-
-
-.img-link{
-    font-size: 0.6rem;
-    font-weight: 600px;
-    color: #FFFFFF;
 }
+.mid-content-2 > div{
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20%;
+
+}
+.mid-content-2 > div > h4{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    font-size: 1.5rem;
+
+}
+.mid-content-2 > div > a{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: underline;
+
+}
+.mid-content > div > a{
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: underline;
+}
+
+
+
+
 
 /* join section styles */
 .join-section{
@@ -395,6 +424,30 @@
     .home{
         display:none;
     }
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+       
+    
+     
+     
+    .flex-item{
+        width: 100%;
+        border-radius: 10px;
+        height: 340px;
+    
+        
+    }
+    .flex-item large{
+        width: 100%;
+        border-radius: 10px;
+       
+        
+
+    }
+    
     
 
     
